@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="M Farid Firdaus">
+    <meta name="keyword" content="PAW Modul 2">
+    <meta name="description" content="Pengenalan HTML Tingkat Lanjut">
+    <meta name="robots" content="index, follow">
+
+    <title>Form Registrasi / M FARID FIRDAUS ALI / 1204230038 / IS 06-03</title>
+
+    <style>
+        /* Garis tepi hitam */
+        .form-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid #000;
+            position: relative;
+        }
+
+        /* Menempatkan heading di atas garis */
+        .form-section h3 {
+            position: absolute;
+            top: -30px;
+            left: 15px;
+            background: white;
+            padding: 0 10px;
+        }
+
+        /* Memberi jarak antar tulisan dengan kolom input */
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+
+        /* Mengatur label dan textarea dalam satu baris */
+        .textarea-container {
+            display: flex;
+            align-items: flex-start;
+            /* Memastikan label berada di atas textarea */
+            margin-bottom: 10px;
+        }
+
+        .textarea-container label {
+            margin-right: 10px;
+            /* Jarak antara label dan textarea */
+            margin-top: 5px;
+            /* Memberi sedikit ruang di atas label */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Form Registrasi</h1>
+
+        <!-- Biodata -->
+        <div class="form-section">
+            <h3>Biodata</h3>
+            <div class="form-row">
+                <label><strong>Nama Mahasiswa</strong></label><span class="colon">:</span>
+                <input type="text" name="text_form" size="20" placeholder="Nama Anda">
+            </div>
+
+            <div class="form-row">
+                <label><strong>No Induk Mahasiswa (NIM)</strong></label><span class="colon">:</span>
+                <input type="text" name="disabled_form" size="20" value="123456789" disabled >
+            </div>
+
+            <div class="textarea-container">
+                <label><strong>Alamat Mahasiswa</strong></label><span class="colon">:</span>
+                <textarea name="textarea_form" cols="40" rows="6" placeholder="Alamat Anda"></textarea>
+            </div>
+
+            <div class="form-row">
+                <strong><label for="tgl_lahir">Tanggal Lahir</strong></label><span class="colon">:</span>
+                <select id="tanggal" name="tanggal" style="width: 80px;">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+    
+                    
+                </select>
+                <select id="bulan" name="bulan" style="width: 120px;">
+                    <option value="Januari">Januari</option>
+                    <option value="Februari">Februari</option>
+                    
+                </select>
+                <select id="tahun" name="tahun" style="width: 100px;">
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-row">
+                <label><strong>Jenis Kelamin</strong></label><span class="colon">:</span>
+                <input type="radio" name="radio" value="radio1" id="radio1" checked><label for="radio1">Pria</label>
+                <input type="radio" name="radio" value="radio2" id="radio2"><label for="radio2">Wanita</label>
+            </div>
+
+            <div class="form-row">
+                <label><strong>Upload Foto</strong></label><span class="colon">:</span>
+                <input type="file" name="file">
+            </div>
+
+            <div class="form-row">
+                <label><strong>URL Website</strong></label><span class="colon">:</span>
+                <input type="text" name="text_form" size="20" placeholder="URL Website Anda">
+            </div>
+
+            <div class="form-row">
+                <label><strong>Perguruan Tinggi</strong></label><span class="colon">:</span>
+                <input type="text" name="text_form" size="20">
+            </div>
+        </div>
+
+        <!-- Info Akun -->
+        <div class="form-section">
+            <h3>Info Akun</h3>
+            <div class="form-row">
+                <label><strong>Email</strong></label><span class="colon">:</span>
+                <input type="text" name="text_form" size="20" placeholder="Email Anda">
+            </div>
+            <div class="form-row">
+                <label><strong>Username</strong></label><span class="colon">:</span>
+                <input type="text" name="text_form" size="20" placeholder="Username Anda">
+            </div>
+            <div class="form-row">
+                <label><strong>Password</strong></label><span class="colon">:</span>
+                <input type="text" name="text_form" size="20" placeholder="Password Anda">
+            </div>
+            <div class="form-row">
+                <label><strong>Ulangi Password</strong></label><span class="colon">:</span>
+                <input type="text" name="text_form" size="20" placeholder="Password Anda">
+            </div>
+        </div>
+
+        <!-- Kemampuan Dasar -->
+        <div class="form-section">
+            <h3>Kemampuan Dasar</h3>
+            <div class="form-row">
+                <input type="checkbox" name="checkbox1" value="checkbox1" id="checkbox1">
+                <label for="checkbox1">HTML</label>
+                <input type="checkbox" name="checkbox2" value="checkbox2" id="checkbox2">
+                <label for="checkbox2">CSS</label>
+                <input type="checkbox" name="checkbox3" value="checkbox3" id="checkbox3">
+                <label for="checkbox3">Javascript</label>
+                <input type="checkbox" name="checkbox4" value="checkbox4" id="checkbox4">
+                <label for="checkbox4">PHP</label>
+                <input type="checkbox" name="checkbox5" value="checkbox5" id="checkbox5">
+                <label for="checkbox5">MySQL</label>
+                <input type="checkbox" name="checkbox6" value="checkbox6" id="checkbox6">
+                <label for="checkbox6">Laravel</label>
+                <input type="checkbox" name="checkbox7" value="checkbox7" id="checkbox7">
+                <label for="checkbox7">React Native</label>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Simpan</button>
+            <button type="button">Button</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

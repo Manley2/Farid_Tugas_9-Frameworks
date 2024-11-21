@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        /* Style umum untuk navigation bar */
+        .navbar {
+            display: flex;
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar a {
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+            flex: 1;
+            transition: background-color 0.3s;
+        }
+
+        /* Style untuk tab "HOME" */
+        .navbar a.home {
+            background-color: #4dc3c4;
+            color: white;
+        }
+
+        /* Style untuk tab "SERVICE" */
+        .navbar a.service {
+            background-color: #4d4d4d;
+            color: white;
+        }
+
+        /* Hover effect untuk semua link */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="home">HOME</a>
+        <a href="#" class="service">SERVICE</a>
+        <a href="#">PROJECT</a>
+        <a href="#">ABOUT</a>
+    </div>
+</body>
+</html>
